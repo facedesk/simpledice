@@ -27,7 +27,7 @@ while True:
         one_third = 1/3
         two_thirds= 2/3
 
-	print(str(num)+","+str(max) +" > "+str(ratio))
+	#print(str(num)+","+str(max) +" > "+str(ratio))
         if (ratio > two_thirds):
             sense.show_message(str(num),text_colour=blue)
         elif (ratio >one_third):
