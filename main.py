@@ -23,14 +23,16 @@ while True:
 #    print("x={0}, y= {1}, z = {2}".format(x,y,z))
     if(x>1 or y>1 or z>1):
         num = randint(min,max)
-        ratio = max/num
+        ratio = num/max
+        one_third = 1/3
+        two_thirds= 2/3
 
-	print(str(max)+","+str(num) +" > "+str(ratio))
-        if (ratio <=1):
+	print(str(num)+","+str(max) +" > "+str(ratio))
+        if (ratio > two_thirds):
             sense.show_message(str(num),text_colour=blue)
-        elif (ratio <=2):
+        elif (ratio >one_third):
             sense.show_message(str(num),text_colour=green)
-        elif (ratio <= 3 or num == 1):
+        elif (ratio > 0):
             sense.show_message(str(num),text_colour=red)
 	else:
 	    sense.show_message("invalid "+str(num),text_colour=red)
